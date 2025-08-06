@@ -1,22 +1,99 @@
 <!DOCTYPE html>
-<html lang="sr">
-<head>
-  <meta charset="UTF-8">
-  <title>EBEC - Početna</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header>
-    <h1>Dobrodošli na EBEC sajt</h1>
-    <nav>
-      <button onclick="window.open('o-ebecu.html','_blank')">O EBEC-u</button>
-      <button onclick="window.open('galerija.html', '_blank')">Galerija</button>
-      <button onclick="window.open('prijava.html', '_blank')">Prijava</button>
-    </nav>
-  </header>
-  <main>
-    <p>Evropsko BEST inženjersko takmičenje (EBEC) okuplja studente širom Evrope u izazovnim timskim inženjerskim zadacima.</p>
-  </main>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <title> AIBG - Početna</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+
+  <body>
+   <header class="up-header">
+    <div class="up-container">
+      <div class="logo">
+        <img src="img/Asset 2.png", alt="AIBG-LOGO">
+      </div>
+      <nav>
+        <ul class="nav-linkovi">
+          <li class="dropdown">
+            <a href="#" class="btn-up"> Više informacija ▼ </a>
+            <ul class="dropdown-meni">
+              <li><a href="galerija.html" class="btn-up-li">Galerija dođaja</a></li>
+              <li><a href="prijava.html" class="btn-up-li">Prijavi se!</a></li>
+            </ul>
+          </li>
+          <li><a href="#pocetak">Pocetak</a></li>
+          <li><a href="#o-aibgu">O AIBG-u</a></li>
+          <li><a href="#istorija">Istorija</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div style="clear: both;"></div>
+    </div>
+   </header>
+
+  <hr class="separator">
+
+   <section class="hero" id="pocetak">
+    <div class="hero-content">
+      <p class="prijava">Prijave su otvorene</p>
+      <h1>ARTIFICIAL INTELLIGENCE BATTLEGROUNDS</h1>
+      <h2>AIBG 2025 - NIŠ</h2>
+      <p>Oktobar 2025 | Elektronski fakultet</p>
+      <a href="#prijava" class="btn">PRIJAVI SE</a>
+    </div>
+   </section>
+
+   <hr class="separator2">
+
+   <section class="about" id="o-aibgu">
+    <div class="container">
+      <h2>
+       <span class="broj">0</span>
+       <span class="naslov">AIBG-u</span>
+      </h2>   
+      <p class="paragraf">
+        AIBG (Artificial Intelligence BattleGrounds) je godišnje studentsko takmičenje koje organizuje <strong>BEST</strong> (Board of European Students of Technology), 
+        sa ciljem da okupi studente tehničkih i prirodno-matematičkih nauka iz različitih zemalja i univerziteta. Tokom ovog intenzivnog i izazovnog događaja, 
+        timovi od 3 do 4 studenta takmiče se u rešavanju konkretnih problema iz oblasti veštačke inteligencije — kao što su obrada podataka, mašinsko učenje, 
+        prepoznavanje obrazaca i optimizacija algoritama.
+      </p>
+
+      <p class="paragraf">
+       AIBG nije samo takmičenje, već i edukativna platforma. Učesnici imaju priliku da prisustvuju radionicama, upoznaju se sa aktuelnim tehnologijama iz industrije, 
+       sarađuju sa mentorima iz IT kompanija, i razvijaju timski duh i veštine rešavanja problema. Veštačka inteligencija se koristi kao osnova zadataka koji simuliraju realne izazove iz industrije.
+      </p>
+
+       <p class="paragraf">
+        Prvi AIBG je održan <strong>2017. godine</strong> i od tada se održava svake godine u različitim gradovima u kojima BEST ima lokalne grupe. Događaj je prepoznat 
+        i od strane IT kompanija, univerziteta i akademske zajednice kao sjajna prilika za razvoj mladih talenata. Pored tehničkog dela, AIBG nudi i društveni program, 
+        umrežavanje i razmenu iskustava među studentima širom Evrope.
+       </p>
+
+       <p class="paragraf">
+       Bez obzira da li si početnik u veštačkoj inteligenciji ili već imaš iskustva sa mašinskim učenjem i programiranjem, AIBG ti pruža priliku da testiraš svoja znanja, 
+        upoznaš nove ljude, i budeš deo jedinstvene evropske studentske zajednice.
+       </p>
+
+    </div>
+   </section>
+
+
+  <footer>
+     <div id="popup-footer" class="footer-content">
+        <div class="social-ikonice">
+           <a href="https://instagram.com/tvojprofil" target="_blank">
+           <img src="img/instagram.svg" alt="Instagram">
+           </a>
+           <a href="https://facebook.com/tvojprofil" target="_blank">
+           <img src="img/facebook.svg" alt="Facebook">
+           </a>
+           <a href="https://linkedin.com/in/tvojprofil" target="_blank">
+           <img src="img/linkedin.svg" alt="LinkedIn">
+           </a>
+        </div>
+       <p>© AIBG Niš © 2025 • Made with ❤︎ by Nenad Ignjatović (˶ᵔ ᵕ ᵔ˶)</p>
+     </div> 
+  </footer>
+  </body>
 </html>

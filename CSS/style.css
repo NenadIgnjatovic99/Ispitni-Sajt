@@ -1,0 +1,259 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .up-header{
+        background: rgb(195, 204, 212);
+    }
+
+    .separator{
+        border: none;
+        height: 6px;
+        background: linear-gradient(to right, rgb(1, 66, 187), rgb(1, 240, 236));
+    }
+
+    .separator2{
+        border: none;
+        height: 6px;
+        background: linear-gradient(to right, rgb(1, 240, 236), rgb(1, 66, 187));
+    }
+
+    .up-container{
+        justify-content: center;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .up-header {
+      background-image: url("https://i.pinimg.com/1200x/b4/0f/64/b40f64090a4af58a5caa22a15b3403c3.jpg");
+      padding: 5px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      top: 0;
+      z-index: 1000;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .logo {
+      padding-top: 20px;
+      float: left;
+      font-size: 24px;
+      font-weight: bold;
+      color: #f97316; /* narandžasta */
+    }
+
+    nav {
+      float: right;
+      padding-right: 10px;
+      padding-top: 30px;
+    }
+
+    .nav-linkovi {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-linkovi li {
+      position: relative;
+    }
+
+    .nav-linkovi a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-linkovi a:hover {
+      color: #0937dd;
+    }
+
+    .dropdown-meni {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 10px 0;
+      z-index: 999;
+    }
+
+    .dropdown:hover .dropdown-meni {
+      display: block;
+    }
+
+    .dropdown-meni li {
+      padding: 10px 15px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dropdown-meni a {
+      color: #333;
+    }
+
+    .hero {
+      background: url(/img/pozadina.jpg) no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 170px 20px;
+    }
+
+    .naslov , .broj{
+        color: white;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    }
+
+    p{
+      font-size: 22px;
+      color: white;
+    }
+
+    .paragraf{
+        color: #e5e5e5;
+        margin-bottom: 20px;
+        text-align: center;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    }
+
+    .hero .subtitle {
+      font-size: 18px;
+      color: #f97316;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      font-weight: normal;
+      margin: 10px 0;
+    }
+
+    .hero p {
+      margin: 10px 0 20px;
+      font-size: 18px;
+    }
+
+    .btn {
+      background: #02639f;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-up{
+      background: rgb(97, 225, 241);
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 2s;
+    }
+
+    .btn-up-li {
+      background: white;
+      color:  white;
+      padding: 5px 10px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 2s;
+    }
+
+    .btn:hover {
+      background: #276fda;
+    }
+
+    .btn-up:hover{
+        background: rgb(89, 145, 194);
+    }
+
+        .btn-up-li:hover{
+        background: rgb(26, 255, 240);
+    }
+
+    .about, .form {
+      padding: 60px 20px;
+      background: #f9f9f9;
+    }
+
+    .about h2, .form h2 {
+      color: #1e3a8a; /* tamnoplava */
+      margin-bottom: 20px;
+    }
+
+    .form p {
+      margin-top: 20px;
+    }
+
+    .about{
+      background-image: url(/img/DSC_0629.png);
+      background-repeat: no-repeat;
+      background-size: 2200px 1500px;
+      background-position: center;
+    }
+    
+
+    footer{
+     background-color: #113D7C;
+     color: #fff;
+     padding: 15px 0;
+     text-align: center;
+     font-size: 0.9rem;
+    }
+
+    .footer-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+    }
+
+   .social-ikonice {
+     display: flex;
+     gap: 15px; 
+     justify-content: center;
+    }
+
+  .social-ikonice img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(0) invert(1); /* bele ikonice */
+}
+
+  .social-ikonice img:hover {
+     transform: scale(1.4);
+     filter: brightness(0.8) invert(1);
+  }
+
