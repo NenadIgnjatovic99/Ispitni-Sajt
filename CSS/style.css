@@ -1,4 +1,9 @@
-    * {
+
+  html {
+  scroll-behavior: smooth;
+}
+  
+  * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -44,14 +49,16 @@
     }
 
     .up-header {
-      background-image: url("https://i.pinimg.com/1200x/b4/0f/64/b40f64090a4af58a5caa22a15b3403c3.jpg");
+      background-image: url('/img/up-header.jpg');
       padding: 5px 0;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       top: 0;
       z-index: 1000;
       background-repeat: no-repeat;
       background-size: cover;
+      position: sticky;
     }
+
 
     .logo {
       padding-top: 20px;
@@ -128,6 +135,10 @@
     p{
       font-size: 22px;
       color: white;
+    }
+
+    .hero-content .prijava{
+      font-size: 25px;
     }
 
     .paragraf{
@@ -219,10 +230,11 @@
     .about{
       background-image: url(/img/DSC_0629.png);
       background-repeat: no-repeat;
-      background-size: 2200px 1500px;
+      background-size: cover;
       background-position: center;
     }
     
+    /* FOOTER DEO TEKSTA */
 
     footer{
      background-color: #113D7C;
@@ -246,14 +258,271 @@
     }
 
   .social-ikonice img {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     transition: transform 0.3s ease, filter 0.3s ease;
-    filter: brightness(0) invert(1); /* bele ikonice */
+    filter: invert(1);
 }
 
   .social-ikonice img:hover {
      transform: scale(1.4);
-     filter: brightness(0.8) invert(1);
+     filter: brightness(0) invert(1) sepia(100%) saturate(800%) hue-rotate(120deg);
   }
+
+
+  /* TIMELINE DEO CSS-A */
+
+ .timeline {
+	position: relative;
+}
+
+.timeline-image {
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	padding: 0px;
+	background-color: red;
+  z-index: 1;
+}
+
+.timeline-image img {
+	height: 70px;
+	width: 70px;
+	border-radius: 60%;
+}
+
+.timeline-item {
+	display: flex;
+	gap: 20px;
+}
+
+.timeline-info,
+.timeline-whitespace {
+  padding-bottom: 30px;
+	flex-grow: 1;
+	flex-basis: 200px;
+}
+
+.timeline-info {
+	text-align: right;
+}
+
+.timeline-info h2 {
+	margin: 0;
+}
+
+.timeline-item-odd {
+	flex-direction: row-reverse;
+}
+
+.timeline-item-odd .timeline-info {
+	text-align: left;
+}
+
+.timeline-container {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 0;
+}
+
+.istorija-tekst{
+  padding-top: 20px;
+  padding-bottom: 20px;
+   color: white;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.istorija-h2{
+  color: rgb(2, 134, 250);
+}
+
+.about-h2{
+  text-align: center;
+  color: blue;
+}
+
+.a-h2{
+  background: #02639f;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: transform 0.3s ease, filter 0.3s ease;
+
+}
+
+.istorija-title{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.istorija-dogadjaja{
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/istorija-pozadina.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.timeline-line {
+  margin: 0 auto;
+	border: 2px solid rgba(36, 208, 251, 0.8);
+	height: 85%;
+  box-shadow: 0px 0 15px 12px rgba(2, 225, 254, 0.6);
+  z-index: 1;
+}
+
+/* Osnovna sekcija */
+.kontakt-sekcija {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Naslov sekcije */
+.kontakt-sekcija h2{
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00ffd5; /* Tirkizna boja */
+  text-shadow: 0 0 8px #00ffd5;
+}
+
+.kontakt-sekcija h4{
+  font-size: 25px;
+  margin-bottom: 40px;
+  color: #00ffd5; /* Tirkizna boja */
+  text-shadow: 0 0 8px #00ffd5;
+}
+
+/* Raspored kartica */
+.kontakt-kartice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Pojedinačna kartica */
+.kontakt-kartica {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 213, 0.3);
+}
+
+.kontakt-kartica:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 255, 213, 0.5);
+}
+
+/* Profil slike */
+.profil-slika {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0px;
+  border: 2px solid #00ffd5;
+}
+
+/* Imena i titule */
+.kontakt-kartica h3 {
+  font-size: 1.2rem;
+  color: #00ffd5;
+  margin: 10px 0 5px;
+}
+
+.kontakt-kartica p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  color: #ccc;
+}
+
+/* Telefon */
+.kontakt-kartica .telefon {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Ikonice za društvene mreže */
+.ikonice {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.ikonice a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+  filter: brightness(0) invert(1);
+}
+
+.ikonice a:hover img {
+  transform: scale(1.2);
+  filter: brightness(0) invert(1) sepia(100%) saturate(400%) hue-rotate(120deg); /* tirkizni efekat */
+}
+
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  font-size: 18px;
+  border: none;
+  background-color: #00509e;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  transform: scale(1.2);
+  color: black;
+  background-color: cyan;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: inl; /* sakriveni linkovi */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15px;
+  }
+
+}
+
+
+/* Responsivnost */
+@media (max-width: 768px) {
+  .kontakt-kartice {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 
