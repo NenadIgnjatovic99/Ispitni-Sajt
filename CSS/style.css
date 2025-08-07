@@ -404,6 +404,7 @@
 
 /* Raspored kartica */
 .kontakt-kartice {
+  grid-template-columns: repeat(4, 1fr);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -420,6 +421,14 @@
   width: 280px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 15px rgba(0, 255, 213, 0.3);
+}
+
+.kontakt-kartica span {
+  display: block;
+  font-weight: normal;
+  font-size: 0.9em;
+  margin-top: 5px;
+  color: #555;
 }
 
 .kontakt-kartica:hover {
@@ -500,7 +509,7 @@
 }
 
 @media (max-width: 768px) {
-  .nav-menu {
+  .nav-linkovi {
     display: inl; /* sakriveni linkovi */
     position: absolute;
     top: 60px;
@@ -519,8 +528,15 @@
 /* Responsivnost */
 @media (max-width: 768px) {
   .kontakt-kartice {
+    grid-template-columns: repeat(2, 1fr);
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .kontakt-kartice {
+    grid-template-columns: 1fr;
   }
 }
 
