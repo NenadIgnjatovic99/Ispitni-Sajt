@@ -366,7 +366,7 @@
 }
 
 .istorija-dogadjaja{
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/istorija-pozadina.png');
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/istorija-pozadina.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -523,7 +523,6 @@
   }
 
 }
-
 
 /* Responsivnost */
 @media (max-width: 768px) {

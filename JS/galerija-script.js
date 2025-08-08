@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+  
   // Funkcija za zatvaranje modala
   function closeModal() {
     modal.classList.remove('show');
