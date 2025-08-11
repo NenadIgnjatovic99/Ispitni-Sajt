@@ -2,24 +2,125 @@
 <html lang="sr">
 <head>
   <meta charset="UTF-8">
-  <title>Prijava</title>
+  <title>Prijava za AIBG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/CSS/prijava.css">
-  <script src="/JS/prijava-script.js" defer></script>
 </head>
+
 <body>
-  <h1>Prijava na EBEC</h1>
-  <form id="prijava-forma">
-    <label>Ime: <input type="text" name="ime" required></label><br>
-    <label>Email: <input type="email" name="email" required></label><br>
-    <label>Izaberi oblast:
-      <select name="oblast">
-        <option>Case Study</option>
-        <option>Team Design</option>
-      </select>
-    </label><br>
-    <label><input type="checkbox" required> Slažem se sa uslovima</label><br>
-    <button type="submit">Pošalji</button>
-  </form>
-  <div id="uspeh" style="display:none;">Uspešno ste se prijavili!</div>
+
+  <header class="up-header">
+    <div class="up-container">
+      <h1>✎ᝰ Prijava za AIBG ✎ᝰ</h1>
+      <div class="logo">
+        <img src='/img/Asset 2.png', alt="AIBG-LOGO">
+      </div>
+      <nav>
+        <ul class="nav-linkovi">
+          <li><a href="/HTML/index.html" target="_blank" class="btn">Pocetna stranica</a></li>
+          <li><a href="/HTML/galerija.html" target="_blank" class="btn">Galerija</a></li>
+        </ul>
+      </nav>
+      <div style="clear: both;"></div>
+    </div>
+   </header>
+</header>
+
+<section class="form-section">
+    <form action="#" method="post" class="aibg-form">
+        
+        <h2>Osnovni podaci</h2>
+        <label>Ime i prezime:</label>
+        <input type="text" name="ime" required>
+
+        <label>Datum rođenja:</label>
+        <input type="date" name="datum" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Broj telefona:</label>
+        <input type="tel" name="telefon" required>
+
+        <label>Grad / Univerzitet:</label>
+        <input type="text" name="grad" required>
+
+        <h2>Podaci o studijama</h2>
+        <label>Fakultet:</label>
+        <input type="text" name="fakultet" required>
+
+        <label>Smer:</label>
+        <input type="text" name="smer" required>
+
+        <label>Godina studija:</label>
+        <select name="godina" required>
+            <option value="">Izaberi</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>Master</option>
+        </select>
+
+        <h2>Takmičarski podaci</h2>
+        <label>Kategorija takmičenja:</label>
+        <select name="kategorija" required>
+            <option value="">Izaberi</option>
+            <option>Team Design</option>
+            <option>Case Study</option>
+        </select>
+
+        <label>Prijava:</label>
+        <select name="prijava" required>
+            <option value="">Izaberi</option>
+            <option>Imam tim</option>
+            <option>Pojedinačno</option>
+        </select>
+
+        <label>Motivacija:</label>
+        <textarea name="motivacija" rows="3" placeholder="Zašto želiš da učestvuješ?" required></textarea>
+
+        <label>Posebne napomene:</label>
+        <textarea name="napomene" rows="2"></textarea>
+        
+        <div class="checkbox-section">
+          <div class="checkbox-item">
+            <label for="agree">Prihvatam uslove takmičenja</label>
+            <input type="checkbox" id="agree" name="agree">
+          </div>
+         <div class="checkbox-item">
+           <label for="newsletter">Želim da primam obaveštenja</label>
+           <input type="checkbox" id="newsletter" name="newsletter">
+         </div>
+          <div class="checkbox-item">
+           <label for="privacy">Prihvatam politiku privatnosti</label>
+           <input type="checkbox" id="privacy" name="privacy">
+         </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Pošalji prijavu</button>
+    </form>
+</section>
+
+
+  <footer>
+     <div id="popup-footer" class="footer-content">
+        <div class="social-ikonice">
+           <a href="https://www.instagram.com/aibg_nis/" target="_blank">
+           <img src="/img/instagram.svg" alt="Instagram">
+           </a>
+           <a href="https://www.facebook.com/aibgnis" target="_blank">
+           <img src="/img/facebook.svg" alt="Facebook">
+           </a>
+           <a href="https://linkedin.com/in/tvojprofil" target="_blank">
+           <img src="/img/linkedin.svg" alt="LinkedIn">
+           </a>
+        </div>
+       <p>© AIBG Niš © 2025 • Made with ❤︎ by Nenad Ignjatović (˶ᵔ ᵕ ᵔ˶)</p>
+     </div> 
+  </footer>
+
 </body>
 </html>
+
+

@@ -10,7 +10,7 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// U trenutku kada korisnik klikne dugme, raca ga na vrh stranice
+// U trenutku kada korisnik klikne dugme, vraca ga na vrh stranice
 scrollBtn.addEventListener('click', function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
@@ -26,6 +26,8 @@ document.querySelectorAll('.nav-linkovi').forEach(link => {
   });
 });
 
+
+//Funckija koja prikazuje poruku kada se prvi put udje na sajt
 if (!localStorage.getItem('visited')) {
   alert("Dobrodošao na naš sajt! 👋");
   localStorage.setItem('visited', 'true');
